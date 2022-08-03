@@ -1,0 +1,30 @@
+#spaceBlob {
+  display: block;
+  margin: auto;
+  width: 512px;
+  height: 512px;
+}
+
+#header {
+  display: inline-block;
+  background-color: rgb(25, 30, 40);
+  width: 100%;
+}
+
+.majorSegLight {
+  display: inline-block;
+  background-color: rgb(25, 30, 40);
+  width: 100%;
+  height: 100vh;
+}
+
+.majorSegDark {
+  display: inline-block;
+  background-color: rgb(30, 35, 45);
+  width: 100%;
+  height: 100vh;
+}
+
+.textLight {
+  color: aliceblue;
+}
