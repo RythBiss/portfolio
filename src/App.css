@@ -1,18 +1,26 @@
+*{
+  margin: 0;
+ }
+
 #spaceBlob {
   display: block;
-  margin: auto;
   width: 512px;
   height: 512px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #header {
-  display: inline-block;
+  display: block;
   background-color: rgb(25, 30, 40);
   width: 100%;
 }
 
 .majorSegLight {
-  display: inline-block;
+  display: block;
   background-color: rgb(25, 30, 40);
   width: 100%;
   height: 100vh;

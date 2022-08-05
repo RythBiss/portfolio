@@ -1,30 +1,15 @@
 import './App.css';
-import logo from './img/Space Blob.gif'
+import spaceBlob from './img/Space Blob.gif'
+import MajorSegment from './MajorSegment.js'
+
+const spaceBlobElement = <img id='spaceBlob' src={spaceBlob} alt='spaceBlob' />
 
 function App() {
   return (
     <div className="App">
-      <div className='majorSegDark'>
-        <div id='header'>
-          <h2 className='textLight'>
-            Header
-          </h2>
-        </div>
-        <h1 className='textLight'>
-          Portfolio Intro
-        </h1>
-        <img id='spaceBlob' src={logo} alt="space blob" />
-      </div>
-      <div className='majorSegLight'>
-        <h1 className='textLight'>
-          Skills
-        </h1>
-      </div>
-      <div className='majorSegDark'>
-        <h1 className='textLight'>
-          Project Links
-        </h1>
-      </div>
+      <MajorSegment body={spaceBlobElement} styling='majorSegLight' />
+      <MajorSegment body='List skills here' styling='majorSegDark' />
+      <MajorSegment body='Add links to projects' styling='majorSegLight' />
     </div>
   );
 }
