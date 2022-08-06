@@ -1,17 +1,17 @@
 *{
   margin: 0;
+  padding: 0;
  }
 
 #spaceBlob {
-  display: block;
-  width: 512px;
-  height: 512px;
+  display: inline-block;
+  width: fit-content;
+  height: fit-content;
   margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  outline: 1px solid green;
 }
 
 #header {
@@ -20,26 +20,75 @@
   width: 100%;
 }
 
+#img {
+  display: inline-block;
+  width: 720px;
+  height: 720px;
+}
+
+#line {
+  width: 350px;
+  height: 5px;
+  background-color: aliceblue;
+}
+
 .majorSegLight {
   display: block;
-  background-color: rgb(25, 30, 40);
+  background-color: aliceblue;
   width: 100%;
   height: 100vh;
 }
 
 .majorSegDark {
-  display: inline-block;
+  display: block;
   background-color: rgb(30, 35, 45);
   width: 100%;
   height: 100vh;
 }
 
 .textLight {
+  text-align: center;
   color: aliceblue;
+  margin: 5px;
+
+  font-family: 'Courier New', Courier, monospace;
 }
 
-.splashText {
-  height: 64px;
-  width: 512px;
-  outline: 1px solid red;
+.splashTextCont {
+  display: inline-block;
+  width: fit-content;
+  height: fit-content;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hexagon {
+  position: relative;
+  width: 128px; 
+  height: 73.90px;
+  background-color: #316ebf;
+  margin: 36.95px 0;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 64px solid transparent;
+  border-right: 64px solid transparent;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 36.95px solid #316ebf;
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 36.95px solid #316ebf;
 }
