@@ -22,8 +22,8 @@
 
 #img {
   display: inline-block;
-  width: 720px;
-  height: 720px;
+  width: 1024px;
+  height: 1024px;
 }
 
 #line {
@@ -41,7 +41,7 @@
 
 .majorSegDark {
   display: block;
-  background-color: rgb(30, 35, 45);
+  background-color: rgb(15, 20, 25);
   width: 100%;
   height: 100vh;
 }
@@ -63,32 +63,4 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.hexagon {
-  position: relative;
-  width: 128px; 
-  height: 73.90px;
-  background-color: #316ebf;
-  margin: 36.95px 0;
-}
-
-.hexagon:before,
-.hexagon:after {
-  content: "";
-  position: absolute;
-  width: 0;
-  border-left: 64px solid transparent;
-  border-right: 64px solid transparent;
-}
-
-.hexagon:before {
-  bottom: 100%;
-  border-bottom: 36.95px solid #316ebf;
-}
-
-.hexagon:after {
-  top: 100%;
-  width: 0;
-  border-top: 36.95px solid #316ebf;
 }
