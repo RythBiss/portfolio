@@ -64,3 +64,23 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+svg {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  pointer-events: none;
+}
+
+#stars {
+  max-width: 256px;
+  max-height: 256px;
+}
+ 
+@keyframes constellation {
+    0% {
+        stroke-dashoffset: 1000;
+    }
+    100% {
+      stroke-dashoffset: 0;
+  }
+}

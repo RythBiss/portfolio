@@ -1,6 +1,7 @@
 import './App.css';
 import spaceBlob from './img/Space Blob.gif'
 import MajorSegment from './MajorSegment.js'
+import Constellation from './img/Components/Constellation';
 
 const spaceBlobElement =
   <div  id='spaceBlob'>
@@ -12,14 +13,14 @@ const spaceBlobElement =
     <img id='img' src={spaceBlob} alt='spaceBlob' />
   </div>
 
-  //Carrie's constelation idea and transition idea
+const Orion = <Constellation />
 
 function App() {
   return (
     <div className="App">
       <MajorSegment body={spaceBlobElement} styling='majorSegDark' />
-      <MajorSegment body='Skills here' styling='majorSegLight' />
-      <MajorSegment body='Add links to projects' styling='majorSegDark' />
+      <MajorSegment body='Skills' styling='majorSegLight' />
+      <MajorSegment body={Orion} styling='majorSegDark' />
     </div>
   );
 }
