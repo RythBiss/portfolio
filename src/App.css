@@ -3,10 +3,11 @@
   padding: 0;
  }
 
-#spaceBlob {
-  display: inline-block;
-  width: fit-content;
-  height: fit-content;
+#splashDisplay {
+  display: flex;
+  min-width: fit-content;
+  min-height: fit-content;
+  align-items: center;
   margin: 0;
   position: absolute;
   top: 50%;
@@ -20,21 +21,15 @@
   width: 100%;
 }
 
-#img {
-  display: inline-block;
-  width: 1024px;
-  height: 1024px;
-}
-
 #line {
-  width: 350px;
+  width: 375px;
   height: 5px;
-  background-color: aliceblue;
+  background-color: #FFFFF2;
 }
 
 .majorSegLight {
   display: block;
-  background-color: aliceblue;
+  background-color: #FFFFF2;
   width: 100%;
   height: 100vh;
 }
@@ -44,38 +39,38 @@
   background-color: rgb(15, 20, 25);
   width: 100%;
   height: 100vh;
+  padding: 0%;
 }
 
 .textLight {
   text-align: center;
-  color: aliceblue;
+  color: #FFFFF2;
   margin: 5px;
 
   font-family: 'Courier New', Courier, monospace;
 }
 
 .splashTextCont {
-  display: inline-block;
-  width: fit-content;
+  min-width: fit-content;
   height: fit-content;
   margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border: 3px solid #FFFFF2;
+  padding: 10px;
 }
 
-svg {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-}
-
-#stars {
+.trace {
+  margin: 50px;
   max-width: 256px;
   max-height: 256px;
+  stroke-dasharray: 1200;
+  stroke-dashoffset: 1200;
 }
 
-svg:hover {
+.trace:hover {
   animation: traceAnim 0.5s ease-in forwards;
 }
  
