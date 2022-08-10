@@ -68,18 +68,18 @@
 svg {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  pointer-events: none;
 }
 
 #stars {
   max-width: 256px;
   max-height: 256px;
 }
+
+svg:hover {
+  animation: traceAnim 0.5s ease-in forwards;
+}
  
-@keyframes constellation {
-    0% {
-        stroke-dashoffset: 1000;
-    }
+@keyframes traceAnim {
     100% {
       stroke-dashoffset: 0;
   }
