@@ -2,12 +2,13 @@ import './App.css';
 import MajorSegment from './Components/MajorSegment.js'
 import Constellation from './Components/Constellation'
 import SpaceBlob from './Components/SpaceBlob'
+import Skill from './Components/Skill'
 
 const Orion = <Constellation pattern='Orion' />
 const Taurus = <Constellation pattern='Taurus' />
 
-const SpaceView = 
-<div>
+const titleElement = 
+<>
   <SpaceBlob styling='starBlob' />
   <div className='splashTextCont'>
     <h1 className='textLight'>
@@ -18,22 +19,31 @@ const SpaceView =
       Frontend Developer
     </h1>
   </div>
-</div>
+</>
 
 const spaceBlobElement =
   <>
     <div  id='splashDisplay'>
       {Taurus}
-      {SpaceView}
+      {titleElement}
       {Orion}
     </div>
   </>
+
+
+const skillsElement = 
+<>
+  <Skill skillName='HTML' />
+  <Skill skillName='CSS' />
+  <Skill skillName='JavaScript' />
+  <Skill skillName='React' />
+</>
 
 function App() {
   return (
     <div className="App">
       <MajorSegment body={spaceBlobElement} styling='majorSegDark' />
-      <MajorSegment body='Skills' styling='majorSegLight' />
+      <MajorSegment body={skillsElement} styling='majorSegLight' />
       <MajorSegment body='Work' styling='majorSegDark' />
     </div>
   );
