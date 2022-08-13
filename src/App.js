@@ -4,13 +4,10 @@ import Constellation from './Components/Constellation'
 import SpaceBlob from './Components/SpaceBlob'
 import Skill from './Components/Skill'
 
-const Orion = <Constellation pattern='Orion' />
-const Taurus = <Constellation pattern='Taurus' />
-
 const titleElement = 
-<>
+<div className='splashTextCont'>
   <SpaceBlob styling='starBlob' />
-  <div className='splashTextCont'>
+  <div className='splashText'>
     <h1 className='textLight'>
       Davd Schaarschmidt
     </h1>
@@ -19,14 +16,20 @@ const titleElement =
       Frontend Developer
     </h1>
   </div>
-</>
+</div>
 
-const spaceBlobElement =
+const segmentOne =
   <>
+  {titleElement}
     <div  id='splashDisplay'>
-      {Taurus}
-      {titleElement}
-      {Orion}
+      <div className='constellationGroupings'>
+        <Constellation className='constellationContainer TopLeft' pattern='Taurus'/>
+        <Constellation className='constellationContainer BottomLeft' pattern='Orion'/>
+      </div>
+      <div className='constellationGroupings'>
+        <Constellation className='constellationContainer TopRight' pattern='Taurus'/>
+        <Constellation className='constellationContainer BottomRight' pattern='Orion'/>
+      </div>
     </div>
   </>
 
@@ -42,7 +45,7 @@ const skillsElement =
 function App() {
   return (
     <div className="App">
-      <MajorSegment body={spaceBlobElement} styling='majorSegDark' />
+      <MajorSegment body={segmentOne} styling='majorSegDark' />
       <MajorSegment body={skillsElement} styling='majorSegLight' />
       <MajorSegment body='Work' styling='majorSegDark' />
     </div>
