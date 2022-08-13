@@ -41,6 +41,6 @@ const Taurus =
 
 export default function Constellation(props) {
   return (
-    <div className={props.styling} >{eval(props.pattern)}</div>
+    <div className={props.className}>{eval(props.pattern)}</div>
   )
 }
