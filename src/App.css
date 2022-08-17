@@ -1,25 +1,18 @@
 *{
   margin: 0;
   padding: 0;
- }
-
- :root {
-  --dark-grey: rgb(15, 20, 25);
-  --dark-blue: rgb(14, 43, 71);
-  --blue: #1508cf;
-  --pink: #fb00ff;
-  --white: #FFFFF2;
+  font-family: 'Courier New', Courier, monospace;
  }
 
 #line {
   width: 100%;
   height: 5px;
-  background-color: var(--white);
+  background-color: #FFFFF2;
 }
 
 .majorSegLight {
   display: block;
-  background-color: var(--white);
+  background-color: #FFFFF2;
   width: 100%;
   height: 100vh;
 }
@@ -29,12 +22,18 @@
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background-image: linear-gradient(var(--dark-grey), var(--dark-blue));
+  background-image: linear-gradient(rgb(15, 20, 25), rgb(14, 43, 71));
+}
+
+.bg-stars {
+  width: 500px;
+  height: 500px;
+  background-color: #fb00ff;
 }
 
 .textLight {
   text-align: center;
-  color: var(--white);
+  color: #FFFFF2;
   margin: 5px;
   font-family: 'Courier New', Courier, monospace;
 }
@@ -44,6 +43,23 @@
   width: 100%;
   height: 100vh;
   min-height: 512px;
+}
+
+.transparent-overlay-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid var(--white);
+  width: 90%;
+  height: 75%;
+}
+
+.transparent-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: var(--white);
+  opacity: 0.05;
 }
 
 .splash-text-container {
@@ -69,6 +85,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   height: 100%;
+  max-height: 512px;
   overflow: visible;
 }
 
@@ -87,9 +104,14 @@
 .constellation-component {
   position: absolute;
   width: 25%;
-  height: 40%;
+<<<<<<< HEAD
+  height: 30%;
   min-height: 300px;
+  margin: 85px;
+=======
+  height: 40%;
   margin: 32px;
+>>>>>>> parent of 5215917 (New Constellations)
 }
 
 .constellation-svg {
