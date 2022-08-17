@@ -1,0 +1,20 @@
+<svg className='constellation-svg' width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Scorpius">
+<g id="Group 1">
+<circle id="Ellipse 1" cx="369.329" cy="148.872" r="18.2228" fill="#FFFFF2"/>
+<circle id="Ellipse 2" cx="478.666" cy="23.5898" r="9.1114" fill="#FFFFF2"/>
+<circle id="Ellipse 3" cx="496.889" cy="73.7025" r="9.1114" fill="#FFFFF2"/>
+<circle id="Ellipse 4" cx="496.889" cy="139.76" r="9.1114" fill="#FFFFF2"/>
+<circle id="Ellipse 5" cx="327.189" cy="195.567" r="9.1114" fill="#FFFFF2"/>
+<circle id="Ellipse 11" cx="15.1232" cy="431.325" r="9.1114" fill="#FFFFF2"/>
+<circle id="Ellipse 12" cx="50.4299" cy="397.157" r="9.1114" fill="#FFFFF2"/>
+<circle id="Ellipse 13" cx="86.8755" cy="347.045" r="9.1114" fill="#FFFFF2"/>
+<circle id="Ellipse 6" cx="278.215" cy="306.043" r="9.1114" fill="#FFFFF2"/>
+<circle id="Ellipse 7" cx="269.104" cy="388.046" r="9.1114" fill="#FFFFF2"/>
+<circle id="Ellipse 8" cx="264.548" cy="462.076" r="9.1114" fill="#FFFFF2"/>
+<circle id="Ellipse 9" cx="175.712" cy="480.299" r="9.1114" fill="#FFFFF2"/>
+<circle id="Ellipse 10" cx="77.7641" cy="480.299" r="18.2228" fill="#FFFFF2"/>
+</g>
+<path id="Vector 1" d="M368.174 149.05L479.779 23M375.007 149.05L498 139.924M375.007 144.487L498 73.1918M368.174 151.902L326.607 195.819L277.638 307.04L269.666 388.031L264.541 462.748L176.852 481H77.7741L14 431.949L49.8729 397.727L86.8847 346.965" stroke="#FFFFF2" stroke-width="3"/>
+</g>
+</svg>

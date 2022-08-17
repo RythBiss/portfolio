@@ -1,0 +1,23 @@
+<svg className='constellation-svg' width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Canis">
+<g id="stars">
+<circle id="Ellipse 1" cx="296" cy="118" r="16" fill="#FFFFF2"/>
+<circle id="Ellipse 2" cx="161" cy="347" r="16" fill="#FFFFF2"/>
+<circle id="Ellipse 4" cx="219" cy="126" r="8" fill="#FFFFF2"/>
+<circle id="Ellipse 15" cx="466" cy="429" r="8" fill="#FFFFF2"/>
+<circle id="Ellipse 16" cx="312" cy="495" r="8" fill="#FFFFF2"/>
+<circle id="Ellipse 9" cx="396" cy="222" r="8" fill="#FFFFF2"/>
+<path id="Ellipse 10" d="M275.804 292.5C275.804 296.918 272.223 300.5 267.804 300.5C263.386 300.5 259.804 296.918 259.804 292.5C259.804 288.082 263.386 284.5 267.804 284.5C272.223 284.5 275.804 288.082 275.804 292.5Z" fill="#FFFFF2"/>
+<circle id="Ellipse 11" cx="235" cy="387" r="8" fill="#FFFFF2"/>
+<circle id="Ellipse 12" cx="198" cy="261" r="8" fill="#FFFFF2"/>
+<circle id="Ellipse 13" cx="100" cy="371" r="8" fill="#FFFFF2"/>
+<circle id="Ellipse 14" cx="43" cy="445" r="8" fill="#FFFFF2"/>
+<circle id="Ellipse 7" cx="388" cy="142" r="8" fill="#FFFFF2"/>
+<circle id="Ellipse 8" cx="466" cy="126" r="8" fill="#FFFFF2"/>
+<circle id="Ellipse 5" cx="169" cy="86" r="8" fill="#FFFFF2"/>
+<circle id="Ellipse 6" cx="240" cy="27" r="8" fill="#FFFFF2"/>
+<circle id="Ellipse 3" cx="259" cy="411" r="16" fill="#FFFFF2"/>
+</g>
+<path id="Vector 1" d="M296.5 119L219 126.5L168 86.5L239.5 26.5L220 123.5M296.5 126.5L198 260.5L161 347.5L236.5 386.5L267 293L389.5 142.5L302 121M259 411L234 388.5M262.5 416L312.5 495.5M267 411L464.5 429.5M388.5 149L396 220M392.5 141.5L467.5 126.5M156 350L100 371.5L43.5 444.5" stroke="#FFFFF2" stroke-width="3"/>
+</g>
+</svg>
