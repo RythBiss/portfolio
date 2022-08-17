@@ -3,21 +3,8 @@
   padding: 0;
  }
 
-#splashDisplay {
-  /* outline: 4px solid red; */
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 80%;
-  max-width: 1080px;
-  height: 80vh;
-}
-
-
 #line {
-  width: 375px;
+  width: 100%;
   height: 5px;
   background-color: #FFFFF2;
 }
@@ -31,10 +18,10 @@
 
 .majorSegDark {
   display: block;
-  background-image: linear-gradient(rgb(15, 20, 25), rgb(14, 43, 71));
+  position: relative;
   width: 100%;
-  height: 100vh;
-  padding: 0%;
+  min-height: 100vh;
+  background-image: linear-gradient(rgb(15, 20, 25), rgb(14, 43, 71));
 }
 
 .textLight {
@@ -44,131 +31,127 @@
   font-family: 'Courier New', Courier, monospace;
 }
 
-.splashTextCont {
-  margin: 0;
+.hero-page-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 512px;
+}
+
+.splash-text-container {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 50%;
+  height: 40vw;
 }
 
 .splashText {
-  margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  max-width: 35vw;
 }
 
-.Blob {
-  width: 512px;
+.blob-svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
   overflow: visible;
 }
 
-.trace {
-  width: 256px;
-  height: 256px;
+.starBlob {
+  position: relative;
+  height: 100%;
+}
+
+.constellation-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 512px;
+}
+
+.constellation-component {
+  position: absolute;
+  width: 25%;
+  height: 40%;
+  margin: 32px;
+}
+
+.constellation-svg {
   stroke-dasharray: 1200;
   stroke-dashoffset: 1200;
-}
-
-.constellationContainer {
-  width: fit-content;
-  /* outline: 4px solid purple; */
-}
-
-.TopRight {
   position: absolute;
-  right:0px;
-  top: 0px;
+  width: 100%;
+  height: 100%;
 }
 
-.BottomRight {
-  position: absolute;
-  right:0px;
-  bottom: 0px;
+.top-left {
+  top: 0%;
+  left: 0%;
 }
 
-.TopLeft {
-  position: absolute;
-  left:0px;
-  top: 0px;
+.top-right {
+  top: 0%;
+  right: 0%;
 }
 
-.BottomLeft {
-  position: absolute;
-  left:0px;
-  bottom: 0px;
+.bot-left {
+  bottom: 0%;
+  left: 0%;
 }
 
-@media only screen and (max-width: 1325px) {
-
-  .TopRight {
-    display: inline-block;
-    position: static;
-    /* outline: 4px dashed orange; */
-  }
-  
-  .BottomRight {
-    display: inline-block;
-    position: static;
-    /* outline: 4px dashed orange; */
-  }
-  
-  .TopLeft {
-    display: inline-block;
-    position: static;
-    /* outline: 4px dashed orange; */
-  }
-  
-  .BottomLeft {
-    display: inline-block;
-    position: static;
-    /* outline: 4px dashed orange; */
-  }
-
-  #splashDisplay {
-    /* outline: 4px solid red; */
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 512px;
-    height: fit-content;
-  }
-
-  .splashTextCont {
-    min-width: fit-content;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -100%);
-    padding: 10px;
-  }
-
-  .constellationGroupings {
-    width: 50%;
-    display: inline-block;
-  }
-
-  .constellationContainer {
-    width: 50%;
-    /* outline: 4px solid purple; */
-  }
+.bot-right {
+  bottom: 0%;
+  right: 0%;
 }
 
-.constellationGroupings {
-  display: inline-block;
-}
-
-.trace:hover {
+.constellation-svg:hover {
   animation: traceAnim 0.5s ease-in forwards;
 }
  
 @keyframes traceAnim {
     100% {
       stroke-dashoffset: 0;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .splash-text-container{
+    position: relative;
+    margin: auto;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, 0%);
+    min-height: 50vh;
+  }
+
+  .constellation-container {
+    position: relative;
+    margin: auto;
+    min-width: 100%;
+    min-height: 50vh;
+  }
+  
+  .hero-page-container {
+    height: fit-content;
+    min-width: 100vw;
+    min-width: 0;
+  }
+  
+  .constellation-component {
+    min-width: 40%;
+    min-height: 40%;
+    margin: 4%;
+  }
+
+  .splashText {
+    position: absolute;
+    max-width: 100%;
   }
 }

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Orion = 
 
-<svg className='trace' width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg className='constellation-svg' width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
   <g id="Orion">
     <g id="Stars">
       <circle id="Star 7" cx="445.051" cy="436.051" r="19.0512" fill="#FFFFF2"/>
@@ -20,7 +20,7 @@ const Orion =
 
 const Taurus = 
 
-<svg className='trace' width="720" height="512" viewBox="0 0 720 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg className='constellation-svg' width="720" height="512" viewBox="0 0 720 512" fill="none" xmlns="http://www.w3.org/2000/svg">
   <g id="Taurus">
     <g id="Dots">
       <ellipse id="Ellipse 11" cx="681.988" cy="481.954" rx="8.48037" ry="9.04573" fill="#FFFFF2"/>
