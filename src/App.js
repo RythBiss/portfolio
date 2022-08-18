@@ -1,10 +1,7 @@
 import './App.css';
-<<<<<<< HEAD
 import MajorSegment from './Components/MajorSegment.js';
 import HeroPage from './Components/HeroPage';
 import SkillsPage from './Components/SkillsPage';
-=======
-import MajorSegment from './Components/MajorSegment.js'
 import Constellation from './Components/Constellation'
 import SpaceBlob from './Components/SpaceBlob'
 import Skill from './Components/Skill'
@@ -33,7 +30,6 @@ const skillsElement =
   <Skill skillName='JavaScript' />
   <Skill skillName='React' />
 </>
->>>>>>> parent of 5215917 (New Constellations)
 
 function App() {
 
