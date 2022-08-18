@@ -1,7 +1,10 @@
 *{
   margin: 0;
   padding: 0;
+<<<<<<< HEAD
   font-family: 'Courier New', Courier, monospace;
+=======
+>>>>>>> parent of 5215917 (New Constellations)
  }
 
 #line {
@@ -23,12 +26,15 @@
   width: 100%;
   min-height: 100vh;
   background-image: linear-gradient(rgb(15, 20, 25), rgb(14, 43, 71));
+<<<<<<< HEAD
 }
 
 .bg-stars {
   width: 500px;
   height: 500px;
   background-color: #fb00ff;
+=======
+>>>>>>> parent of 5215917 (New Constellations)
 }
 
 .textLight {
@@ -104,9 +110,12 @@
 .constellation-component {
   position: absolute;
   width: 25%;
+<<<<<<< HEAD
   height: 30%;
   min-height: 300px;
   margin: 85px;
+=======
+>>>>>>> parent of 5215917 (New Constellations)
   height: 40%;
   margin: 32px;
 }
