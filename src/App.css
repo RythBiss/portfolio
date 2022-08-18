@@ -104,14 +104,11 @@
 .constellation-component {
   position: absolute;
   width: 25%;
-<<<<<<< HEAD
   height: 30%;
   min-height: 300px;
   margin: 85px;
-=======
   height: 40%;
   margin: 32px;
->>>>>>> parent of 5215917 (New Constellations)
 }
 
 .constellation-svg {
