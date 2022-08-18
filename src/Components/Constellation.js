@@ -1,7 +1,6 @@
 import React from 'react'
 
 const Orion = 
-
 <svg className='constellation-svg' width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
   <g id="Orion">
     <g id="Stars">
@@ -19,7 +18,6 @@ const Orion =
 </svg>;
 
 const Taurus = 
-
 <svg className='constellation-svg' width="720" height="512" viewBox="0 0 720 512" fill="none" xmlns="http://www.w3.org/2000/svg">
   <g id="Taurus">
     <g id="Dots">
@@ -86,8 +84,12 @@ const Scorpius =
 </g>
 </svg>;
 
+function onClickHandler(){
+  console.log("on click")
+}
+
 export default function Constellation(props) {
   return (
-    <div className={props.className}>{eval(props.pattern)}</div>
+    <div className={props.className} onClick={onClickHandler}>{eval(props.pattern)}</div>
   )
 }
