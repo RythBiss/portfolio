@@ -14,12 +14,12 @@
 #line {
   width: 100%;
   height: 5px;
-  background-color: #FFFFF2;
+  background-color: var(--white);
 }
 
 .majorSegLight {
   display: block;
-  background-color: #FFFFF2;
+  background-color: var(--white);
   width: 100%;
   height: 100vh;
 }
@@ -34,7 +34,7 @@
 
 .textLight {
   text-align: center;
-  color: #FFFFF2;
+  color: var(--white);
   margin: 5px;
   font-family: 'Courier New', Courier, monospace;
 }
@@ -44,23 +44,6 @@
   width: 100%;
   height: 100vh;
   min-height: 512px;
-}
-
-.transparent-overlay-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 1px solid var(--white);
-  width: 90%;
-  height: 75%;
-}
-
-.transparent-overlay {
-  width: 100%;
-  height: 100%;
-  background-color: var(--white);
-  opacity: 0.05;
 }
 
 .splash-text-container {
@@ -86,7 +69,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
   height: 100%;
-  max-height: 512px;
   overflow: visible;
 }
 

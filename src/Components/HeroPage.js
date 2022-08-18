@@ -6,6 +6,7 @@ export default function Hero() {
 
   return (
     <div className='hero-page-container'>
+      <Title />
         <div className='constellation-container'>
 
           <Constellation className='constellation-component top-left' pattern='Orion'/>
@@ -13,7 +14,7 @@ export default function Hero() {
           <Constellation className='constellation-component bot-left' pattern='Canis'/>
           <Constellation className='constellation-component bot-right' pattern='Scorpius'/>
 
-          <Title />
+          
         </div>
     </div>
   )
