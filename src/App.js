@@ -1,10 +1,11 @@
 import './App.css';
 import MajorSegment from './Components/MajorSegment.js';
 import HeroPage from './Components/HeroPage';
-import SkillsPage from './Components/SkillsPage';
+import SkillsPage from './Components/DarkOverlay';
 import Constellation from './Components/Constellation'
 import SpaceBlob from './Components/SpaceBlob'
 import Skill from './Components/Skill'
+import About from './Components/LightOverlay';
 
 const titleElement = 
 <div className='splash-text-container'>
@@ -36,7 +37,7 @@ function App() {
   return (
     <div className="App">
       <MajorSegment body={<HeroPage />} styling='majorSegDark' />
-      <MajorSegment body='About' styling='majorSegLight' />
+      <MajorSegment body={<About />} styling='majorSegLight' />
       <MajorSegment body={<SkillsPage/>} styling='majorSegDark' />
       <MajorSegment body='Work' styling='majorSegLight' />
       <MajorSegment body='Contact' styling='majorSegDark' />
