@@ -3,6 +3,11 @@
   padding: 0;
  }
 
+ body {
+  height: 500vh;
+  background-image: linear-gradient(rgb(18, 2, 42), rgb(236, 77, 156));
+ }
+
  :root {
   --dark-grey: rgb(15, 20, 25);
   --dark-blue: rgb(14, 43, 71);
@@ -17,20 +22,40 @@
   background-color: var(--white);
 }
 
+/* make this the content segments */
 .majorSegLight {
   display: block;
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background-image: var(--white);
 }
 
+/*make this the hero segment*/
 .majorSegDark {
   display: block;
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background-image: linear-gradient(var(--dark-grey), var(--dark-blue));
+}
+
+.content-title {
+  outline: 2px solid red;
+}
+
+.content-container {
+  background: #FFF;
+  width: 50%;
+  height: 100vh;
+}
+
+.content-right {
+  float: right;
+}
+
+.content-display {
+  display: inline-block;
+  width: 50%;
+  height: 100vh;
 }
 
 .textLight {

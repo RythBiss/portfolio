@@ -32,7 +32,7 @@ function easeInOutSine (t, b, c, d) {
           </linearGradient>
         </defs>
         <g >
-          <circle id='circle-1' className='blob-circle' cx="450" cy='450' r={r1} fill="url(#NovaGrad)"/>
+          <circle id='circle-1' className='blob-circle' cx="450" cy='450' r="350" /*{r1}*/ fill="url(#NovaGrad)"/>
           <circle id='circle-2' className='blob-circle' cx="720" cy="500" r="350.5" fill="url(#NovaGrad)"/>
           <circle id='circle-3' className='blob-circle' cx="450" cy="650" r="350.5" fill="url(#NovaGrad)"/>
           <circle id='circle-4' className='blob-circle' cx="230" cy="600" r="225" fill="url(#NovaGrad)"/>
