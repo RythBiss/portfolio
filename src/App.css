@@ -5,7 +5,7 @@
 
  body {
   height: 500vh;
-  background-image: linear-gradient(rgb(18, 2, 42), rgb(236, 77, 156));
+  background-image: linear-gradient(#1d1126, #102a73, #e38ab7, #f7f4d7);
  }
 
  :root {
