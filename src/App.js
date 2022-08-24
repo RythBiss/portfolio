@@ -6,6 +6,7 @@ import Constellation from './Components/Constellation'
 import SpaceBlob from './Components/SpaceBlob'
 import Skill from './Components/Skill'
 import ContentBlock from './Components/ContentBlock'
+import { useEffect } from 'react';
 
 const titleElement = 
 <div className='splash-text-container'>
@@ -34,13 +35,39 @@ const skillsElement =
 
 function App() {
 
+  useEffect(() => {
+    generateStars();
+  }, [])
+
+  const generateStars = () => {
+    let svgObj = document.getElementById('svg-id');
+
+    for(let a = 0; a < 1000; a++){
+      let x = Math.floor(Math.random() * 1920);
+      let y = Math.floor(Math.random() * 5400);
+      
+        const newElement = document.createElementNS("http://www.w3.org/2000/svg", 'circle');
+      newElement.setAttribute("cx", x);  
+      newElement.setAttribute("cy", y);
+      newElement.setAttribute("r", "1");
+      newElement.setAttribute("fill", "#f7f4d7");    
+      svgObj.appendChild(newElement);
+    }
+  }
+
   return (
+    
     <div className="App">
+
+      <svg id='svg-id' viewbox= '0 0 1920 5400'>
+
+      </svg>
+
       <MajorSegment body={<HeroPage />} styling='majorSegDark' />
-      <ContentBlock body='{<About />}' styling='majorSegLight' />
-      <ContentBlock pos='content-right' body='{<About />}' styling='majorSegLight' />
-      <ContentBlock body='{<About />}' styling='majorSegLight' />
-      <ContentBlock pos='content-right' body='{<About />}' styling='majorSegLight' />
+      <ContentBlock body='{<About />}' styling='majorSegLight' title='About' text='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'/>
+      <ContentBlock pos='content-right' body='{<About />}' styling='majorSegLight' title='Skills' text={skillsElement} />
+      <ContentBlock body='{<About />}' styling='majorSegLight' title='Work' text='List of projects' />
+      <ContentBlock pos='content-right' body='{<About />}' styling='majorSegLight' title='Contact' text='Contact form. Maybe this last one should be centered.' />
      
     </div>
   );

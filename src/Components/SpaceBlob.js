@@ -8,7 +8,7 @@ const [radius, setRadius] = useState(0);
 
 const blob_1 = document.getElementById('circle-1');
 
-const animateScaleOne = setInterval(animateRescale, 100, 375, 50, 1000);
+//const animateScaleOne = setInterval(animateRescale, 100, 375, 50, 1000);
 
 function animateRescale(begin, change, duration){
   setRadius(easeInOutSine(time, begin, change, duration));
