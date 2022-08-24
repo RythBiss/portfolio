@@ -6,6 +6,8 @@ import ContentBlock from './Components/ContentBlock'
 
 function App() {
 
+  const aboutText = 'My name is David K. Schaarschmidt. I am a front-end developer with over 3 years of experience with a variety of software technologies and tools. Outside of work, you can find me playing video games, working on my boat, Mable, or taking road trips to interesting restaurants.';
+
   useEffect(() => {
     generateStars();
   })
@@ -37,7 +39,7 @@ function App() {
       <svg id='svg-id' viewbox= '0 0 1920 5400'></svg>
 
       <HeroPage />
-      <ContentBlock title='About' text='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'/>
+      <ContentBlock title='About' text={aboutText}/>
       <ContentBlock title='Skills' text='' pos='content-right'/>
       <ContentBlock title='Work' text='List of projects' />
       <ContentBlock title='Contact' text='Contact form. Maybe this last one should be centered.' pos='content-center' />
