@@ -1,15 +1,15 @@
 <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="Orion">
 <g id="Stars">
-<circle id="Star 7" cx="445.051" cy="436.051" r="19.0512" fill="#FFFFF2"/>
-<circle id="Star 6" cx="260.526" cy="499.526" r="9.52558" fill="#FFFFF2"/>
-<circle id="Star 5" cx="215.526" cy="267.526" r="9.52558" fill="#FFFFF2"/>
-<circle id="Star 4" cx="251.526" cy="250.526" r="9.52558" fill="#FFFFF2"/>
-<circle id="Star 3" cx="290.526" cy="231.526" r="9.52558" fill="#FFFFF2"/>
-<circle id="Star 2" cx="78.0512" cy="107.051" r="19.0512" fill="#FFFFF2"/>
-<circle id="Star 1" cx="258.526" cy="39.5256" r="9.52558" fill="#FFFFF2"/>
-<circle id="Star 0" cx="156.526" cy="13.5256" r="9.52558" fill="#FFFFF2"/>
+<circle id="Star 7" cx="445" cy="439" r="2" fill="#FFFFF2"/>
+<circle id="Star 6" cx="261" cy="501" r="2" fill="#FFFFF2"/>
+<circle id="Star 5" cx="213" cy="265" r="2" fill="#FFFFF2"/>
+<circle id="Star 4" cx="250" cy="249" r="2" fill="#FFFFF2"/>
+<circle id="Star 3" cx="291" cy="232" r="2" fill="#FFFFF2"/>
+<circle id="Star 2" cx="75" cy="103" r="2" fill="#FFFFF2"/>
+<circle id="Star 1" cx="255" cy="38" r="2" fill="#FFFFF2"/>
+<circle id="Star 0" cx="156" cy="14" r="2" fill="#FFFFF2"/>
 </g>
-<path id="Vector 1" d="M254.5 249.5L288 233M249 252.5L214.5 267.5M155 15L78 106.5L211.5 263M158 13.5L258 39.5L290 230M261 500L216.5 272.5M444.5 438L293 233" stroke="#FFFFF2" stroke-width="3"/>
+<path id="Vector 1" d="M251.5 248.5L289.5 232.5M249 249.5L214.5 264.5M155 15L75 103L212 264M157.5 14.5L255 38L290.5 230.5M261 500L213.5 266.5M444.5 438L292 233" stroke="#FFFFF2"/>
 </g>
 </svg>

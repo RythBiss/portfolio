@@ -5,7 +5,7 @@
 
  body {
   height: 500vh;
-  background-image: linear-gradient(#1d1126, #102a73, #e38ab7/*, #f7f4d7*/);
+  background-image: linear-gradient(#1d1126, #102a73, #bb4680/*, #f7f4d7*/);
  }
 
  :root {
@@ -13,22 +13,18 @@
   --dark-blue: rgb(14, 43, 71);
   --blue: #1508cf;
   --pink: #fb00ff;
-  --white: #FFFFF2;
+  --white: #fffff2b9;
  }
 
 
 
-/* Background */
+/* unique styles */
 
 #svg-id {
   position: absolute;
   height: 500vh;
   width: 100%;
-  outline: 8px solid red;
 }
-
-/*  */
-
  
 
 #line {
@@ -37,27 +33,23 @@
   background-color: var(--white);
 }
 
-/* make this the content segments */
-.majorSegLight {
+.major-content-container {
   display: block;
   position: relative;
   width: 100%;
   min-height: 100vh;
 }
 
-/*make this the hero segment*/
-.majorSegDark {
-  display: block;
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
+.major-content-container, .hero-page-container {
+  border-bottom: 100px solid var(--white);
+  margin-bottom: -100px;
 }
+
+/*  */
 
 
 
 /* ContentBlock.js */
-
-
 
 .content-title {
   margin: 64px auto 16px auto;
@@ -72,7 +64,7 @@
   transform: translate(-50%, -50%);
 
   border-radius: 30px;
-  background: #FFF;
+  background-color: var(--white);
   width: 50%;
   height: 50vh;
 }
@@ -95,6 +87,11 @@
   right: 30%;
 }
 
+.content-center {
+  left: auto;
+  transform: translate(50%, -50%);
+  right: auto;
+}
 
 /*  */
 
@@ -218,6 +215,14 @@
 .bot-right {
   bottom: 0%;
   right: 0%;
+}
+
+.constellation-content-display {
+  position: relative;
+  width: 25%;
+  height: 40%;
+  min-height: 300px;
+  margin: 32px;
 }
 
 .constellation-svg:hover {

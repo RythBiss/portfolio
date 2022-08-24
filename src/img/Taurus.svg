@@ -1,18 +1,18 @@
-<svg width="720" height="512" viewBox="0 0 720 512" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="Taurus">
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Taurus" clip-path="url(#clip0_7_2)">
 <g id="Dots">
-<ellipse id="Ellipse 11" cx="681.988" cy="481.954" rx="8.48037" ry="9.04573" fill="#FFFFF2"/>
-<ellipse id="Ellipse 10" cx="665.028" cy="452.556" rx="8.48037" ry="9.04573" fill="#FFFFF2"/>
-<ellipse id="Ellipse 9" cx="595.065" cy="405.066" rx="8.48037" ry="9.04573" fill="#FFFFF2"/>
-<ellipse id="Ellipse 8" cx="376.695" cy="334.961" rx="16.9607" ry="18.0915" fill="#FFFFF2"/>
-<ellipse id="Ellipse 7" cx="427.577" cy="344.007" rx="8.48037" ry="9.04573" fill="#FFFFF2"/>
-<ellipse id="Ellipse 6" cx="497.54" cy="353.053" rx="8.48037" ry="9.04573" fill="#FFFFF2"/>
-<ellipse id="Ellipse 5" cx="480.58" cy="281.818" rx="8.48037" ry="9.04573" fill="#FFFFF2"/>
-<ellipse id="Ellipse 4" cx="436.058" cy="238.85" rx="8.48037" ry="9.04573" fill="#FFFFF2"/>
-<ellipse id="Ellipse 3" cx="340.654" cy="150.655" rx="8.48037" ry="9.04573" fill="#FFFFF2"/>
-<ellipse id="Ellipse 2" cx="37.4804" cy="220.759" rx="8.48037" ry="9.04573" fill="#FFFFF2"/>
-<ellipse id="Ellipse 1" cx="114.864" cy="38.7137" rx="16.9607" ry="18.0915" fill="#FFFFF2"/>
+<circle id="Ellipse 11" cx="417.3" cy="490.038" r="2" transform="rotate(22.0191 417.3 490.038)" fill="#FFFFF2"/>
+<circle id="Ellipse 10" cx="413.712" cy="464.384" r="2" transform="rotate(22.0191 413.712 464.384)" fill="#FFFFF2"/>
+<circle id="Ellipse 9" cx="377.799" cy="410.764" r="2" transform="rotate(22.0191 377.799 410.764)" fill="#FFFFF2"/>
+<circle id="Ellipse 8" cx="239.94" cy="289.85" r="2" transform="rotate(22.0191 239.94 289.85)" fill="#FFFFF2"/>
+<circle id="Ellipse 7" cx="276.765" cy="319.637" r="2" transform="rotate(22.0191 276.765 319.637)" fill="#FFFFF2"/>
+<circle id="Ellipse 6" cx="323.679" cy="346.056" r="2" transform="rotate(22.0191 323.679 346.056)" fill="#FFFFF2"/>
+<circle id="Ellipse 5" cx="332.062" cy="290.801" r="2" transform="rotate(22.0191 332.062 290.801)" fill="#FFFFF2"/>
+<circle id="Ellipse 4" cx="312.855" cy="247.66" r="2" transform="rotate(22.0191 312.855 247.66)" fill="#FFFFF2"/>
+<circle id="Ellipse 3" cx="270.589" cy="157.958" r="2" transform="rotate(22.0191 270.589 157.958)" fill="#FFFFF2"/>
+<circle id="Ellipse 2" cx="36.02" cy="120.81" r="2" transform="rotate(22.0191 36.02 120.81)" fill="#FFFFF2"/>
+<circle id="Ellipse 1" cx="139.451" cy="5.32" r="2" transform="rotate(22.0191 139.451 5.32)" fill="#FFFFF2"/>
 </g>
-<path id="Vector 1" d="M500 355L596 405L665 453L682.5 483M497 350.5L480.5 281.5L436.5 238.5L340 150.5L114.5 38M494.5 353L428 344L377 335L37 220.5" stroke="#FFFFF2" stroke-width="3"/>
+<path id="Vector 1" d="M323.5 346.5L377.5 410.5L413.5 464L417.5 489M324 345L332 291L313 247.5L270.5 158L140 5.99999M322 345.5L276.5 319.5L240 290L36 121" stroke="#FFFFF2"/>
 </g>
 </svg>
