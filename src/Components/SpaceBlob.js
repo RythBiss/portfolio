@@ -1,25 +1,36 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 export default function SpaceBlob(props) {
 
-const [r1,setR1] = useState(0);
-const [time, setTime] = useState(0);
-const [radius, setRadius] = useState(0);
+    //time for animation reasons
+    const [time, setTime] = useState(0);
 
-const blob_1 = document.getElementById('circle-1');
-
-//const animateScaleOne = setInterval(animateRescale, 100, 375, 50, 1000);
-
-function animateRescale(begin, change, duration){
-  setRadius(easeInOutSine(time, begin, change, duration));
-  setTime(time + 1);
-  setR1(radius);
-}
-
-//https://spicyyoghurt.com/tools/easing-functions
-function easeInOutSine (t, b, c, d) {
-    return -c / 2 * (Math.cos(Math.PI * t / d) - 1) + b;
-}
+    //duration is a variable so it can be checked later in useEffect
+    const duration = 100;
+  
+    //ease equation for smooth animation, called in the "r" attribute of each circle in the svg below
+    const easeInOutSine = (t, b, c, d) => {
+      return -c / 2 * (Math.cos(Math.PI * t / d) - 1) + b;
+    }
+  
+    //resets time to 0 after a full animation for memory conservation
+    useEffect(() => {
+      //time reset after 2 durations have passed (equation causes animation to go back and forth once, thus the duration * 2)
+      if(time >= (duration*2)){
+        setTime(0);
+      }
+  
+      console.log(`time: ${time}`);
+    })
+  
+    //initialize the interval for time
+    useEffect(() => {
+      const interval = setInterval(() => {
+        setTime((prevTime) => prevTime + 1);
+      }, 1);
+  
+      return () => clearInterval(interval);
+    }, [])
 
 
   return (
@@ -32,14 +43,13 @@ function easeInOutSine (t, b, c, d) {
           </linearGradient>
         </defs>
         <g >
-          <circle id='circle-1' className='blob-circle' cx="450" cy='450' r="350" /*{r1}*/ fill="url(#NovaGrad)"/>
-          <circle id='circle-2' className='blob-circle' cx="650" cy="550" r="350.5" fill="url(#NovaGrad)"/>
-          <circle id='circle-3' className='blob-circle' cx="450" cy="650" r="350.5" fill="url(#NovaGrad)"/>
-          <circle id='circle-4' className='blob-circle' cx="230" cy="600" r="225" fill="url(#NovaGrad)"/>
-          <circle id='circle-5' className='blob-circle' cx="700" cy="350" r="200" fill="url(#NovaGrad)"/>
-          <circle id='circle-6' className='blob-circle' cx="700" cy="750" r="250" fill="url(#NovaGrad)"/>
+          <circle id='circle-1' className='blob-circle' cx="575" cy='500' r={easeInOutSine(time, 550, 25, duration)} fill="url(#NovaGrad)"/>
+          <circle id='circle-3' className='blob-circle' cx="850" cy="1250" r={easeInOutSine(time, 175, 25, duration)} fill="url(#NovaGrad)"/>
+          <circle id='circle-4' className='blob-circle' cx="950" cy="50" r={easeInOutSine(time, 300, 50, duration)} fill="url(#NovaGrad)"/>
+          <circle id='circle-5' className='blob-circle' cx="350" cy="850" r={easeInOutSine(time, 325, 50, duration)} fill="url(#NovaGrad)"/>
+          <circle id='circle-6' className='blob-circle' cx="150" cy="500" r={easeInOutSine(time, 300, 50, duration)} fill="url(#NovaGrad)"/>
         </g>
-      </svg>;
+      </svg>
 
       <div className='splashText'>
         <h1 className='textLight'>

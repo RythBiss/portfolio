@@ -150,7 +150,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 50%;
+  width: 40%;
   height: 40vw;
 }
 
@@ -167,8 +167,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 100%;
+  height: 50%;
   overflow: visible;
+  filter: url(#gooey);
 }
 
 .starBlob {
