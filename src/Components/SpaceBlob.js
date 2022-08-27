@@ -35,7 +35,7 @@ export default function SpaceBlob(props) {
     <div className={props.styling}>
       <svg className='blob-svg' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080">
         <defs>
-          <linearGradient id="NovaGrad" x1="0" y1="0" x2="1024" y2="1024" gradientUnits="userSpaceOnUse" >
+          <linearGradient id="NovaGrad" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse" >
             <stop offset="0%" stop-color="#1508cf" />
             <stop offset="100%" stop-color="#fb00ff" />
           </linearGradient>
