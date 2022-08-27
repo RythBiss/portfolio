@@ -21,11 +21,12 @@ function App() {
       let y = Math.floor(Math.random() * 5400);
       
       const svg_star_element = document.createElementNS("http://www.w3.org/2000/svg", 'circle');
-      
+
       svg_star_element.setAttribute("cx", x);  
       svg_star_element.setAttribute("cy", y);
       svg_star_element.setAttribute("r", "1");
-      svg_star_element.setAttribute("fill", "#f7f4d7");
+      svg_star_element.setAttribute("fill", `#6ac2fc`);
+      svgObj.appendChild(svg_star_element);
 
       svgObj.appendChild(svg_star_element);
     }
@@ -36,7 +37,7 @@ function App() {
     <div className="App">
 
       {/* this gets filled in by generateStars. */}
-      <svg id='svg-id' viewbox= '0 0 1920 5400'></svg>
+      <svg id='svg-id' className='bg-stars' viewbox= '0 0 1920 5400'></svg>
 
       <HeroPage />
       <ContentBlock title='About' text={aboutText}/>

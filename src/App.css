@@ -5,9 +5,12 @@
  }
 
  body {
-  height: 500vh;
   background-image: linear-gradient(#1d1126, #102a73, #bb4680/*, #f7f4d7*/);
  }
+
+ /* circle {
+  filter: blur(1px);
+ } */
 
  :root {
   --dark-grey: rgb(15, 20, 25);
@@ -15,8 +18,8 @@
   --blue: #1508cf;
   --pink: #fb00ff;
   --white: #fffff2b9;
+  --constellation-margin: 10%;
  }
-
 
 
 /* unique styles */
@@ -38,12 +41,13 @@
   display: block;
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .major-content-container, .hero-page-container {
   border-bottom: 100px solid var(--white);
   margin-bottom: -100px;
+ 
 }
 
 /*  */
@@ -74,7 +78,6 @@
   display: inline-block;
   width: 50%;
   height: 100vh;
-  outline: 1px solid red;
 }
 
 .content-text {
@@ -109,8 +112,9 @@
 .hero-page-container {
   position: relative;
   width: 100%;
+  min-width: fit-content;
   height: 100vh;
-  min-height: 700px;
+  min-height: 800px;
 }
 
 .transparent-overlay-container {
@@ -120,7 +124,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  outline: 1px solid var(--white);
 }
 
 .transparent-overlay {
@@ -137,7 +140,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  outline: 2px solid var(--dark-blue);
 }
 
 .black-overlay {
@@ -150,8 +152,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 40%;
-  height: 40vw;
+  width: 512px;
+  height: 512px;
 }
 
 .splashText {
@@ -167,7 +169,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 50%;
+  height: 60%;
   overflow: visible;
   filter: url(#gooey);
 }
@@ -181,15 +183,14 @@
   position: relative;
   width: 100%;
   height: 100%;
-  min-height: 512px;
+  min-height: 700px;
 }
 
 .constellation-component {
   position: absolute;
-  width: 25%;
-  height: 40%;
-  min-height: 300px;
-  margin: 32px;
+  width: 225px;
+  height: 225px;
+  margin: 0px;
 }
 
 .constellation-svg {
@@ -198,30 +199,35 @@
   position: absolute;
   width: 100%;
   height: 100%;
+
 }
 
 .constellation-star {
-  /* use this to create some kind of glow effect */
+  filter: blur(1.5px);
+}
+
+.bg-stars {
+  filter: blur(1px);
 }
 
 .top-left {
-  top: 0%;
-  left: 0%;
+  top: var(--constellation-margin);
+  left: var(--constellation-margin);
 }
 
 .top-right {
-  top: 0%;
-  right: 0%;
+  top: var(--constellation-margin);
+  right: var(--constellation-margin);
 }
 
 .bot-left {
-  bottom: 0%;
-  left: 0%;
+  bottom: var(--constellation-margin);
+  left: var(--constellation-margin);
 }
 
 .bot-right {
-  bottom: 0%;
-  right: 0%;
+  bottom: var(--constellation-margin);
+  right: var(--constellation-margin);
 }
 
 .constellation-content-display {
@@ -242,36 +248,32 @@
   }
 }
 
-@media only screen and (max-width: 700px) {
+
+@media only screen and (max-width: 1080px) {
   .splash-text-container{
     position: relative;
     margin: auto;
     top: 0%;
     left: 0%;
     transform: translate(0%, 0%);
-    min-height: 50vh;
+
+    width: 400px;
+    height: 35%;
+    outline: 1px dashed orange;
   }
 
   .constellation-container {
     position: relative;
-    margin: auto;
-    min-width: 100%;
-    min-height: 50vh;
+    margin: 0 auto 0 auto;
+    height: 65%;
+    min-height: 0;
+    width: 80%;
+    min-width: 550px;
   }
   
   .hero-page-container {
-    height: fit-content;
-    min-width: auto;
-  }
-  
-  .constellation-component {
-    min-width: 40%;
-    min-height: 40%;
-    margin: 4%;
-  }
-
-  .splashText {
-    position: absolute;
-    max-width: 100%;
+    width: 100%;
+    min-width: 0;
+    min-height: none;
   }
 }

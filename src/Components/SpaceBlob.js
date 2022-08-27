@@ -6,7 +6,7 @@ export default function SpaceBlob(props) {
     const [time, setTime] = useState(0);
 
     //duration is a variable so it can be checked later in useEffect
-    const duration = 100;
+    const duration = 1000;
   
     //ease equation for smooth animation, called in the "r" attribute of each circle in the svg below
     const easeInOutSine = (t, b, c, d) => {
@@ -19,8 +19,6 @@ export default function SpaceBlob(props) {
       if(time >= (duration*2)){
         setTime(0);
       }
-  
-      console.log(`time: ${time}`);
     })
   
     //initialize the interval for time
