@@ -34,16 +34,16 @@ function App() {
   return (
     
     <div className="App">
-
+      
       {/* this gets filled in by generateStars. */}
       <svg id='svg-id' className='bg-stars' viewbox= '0 0 1920 5400'></svg>
 
       <HeroPage />
-      <ContentBlock title='About' text={aboutText}/>
-      <ContentBlock title='Skills' text='' pos='content-right'/>
-      <ContentBlock title='Work' text='List of projects' />
-      <ContentBlock title='Contact' text='Contact form. Maybe this last one should be centered.' pos='content-center' />
-     
+      <skillIcon />
+      <ContentBlock className='solid' title='About' text={aboutText}/>
+      <ContentBlock title='Skills' text='skills' content={'skill icons'} pos='content-right'/>
+      <ContentBlock className='solid' title='Work' text='List of projects' />
+      <ContentBlock title='Contact' text='dkschaarschmidt@gmail.com || 240-866-0273' pos='content-center' />
     </div>
   );
 }
