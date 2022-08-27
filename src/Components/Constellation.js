@@ -1,8 +1,8 @@
 import React from 'react'
 
 const star_fill = '#f7e3c8'
-const star_radius = '5'
 const stroke_fill ='#f7e3c840'
+const star_radius = '5'
 const stroke_width = '5'
 
 const Orion = 
@@ -108,11 +108,16 @@ const Scorpius =
 </svg>;
 
 function onClickHandler(){
-  console.log("on click")
+  console.log("on click");
 }
 
 export default function Constellation(props) {
   return (
-    <div className={props.className} onClick={onClickHandler}>{eval(props.pattern)}</div>
+    <div className={`constellation-component ${props.className}`} onClick={onClickHandler}>
+      {eval(props.pattern)}
+      <h6 className='textLight'>
+        {props.navTo}
+      </h6>
+    </div>
   )
 }

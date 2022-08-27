@@ -53,7 +53,7 @@ export default function SpaceBlob(props) {
         <h1 className='textLight'>
           Davd Schaarschmidt
         </h1>
-        <div id='line'/>
+        <div className='line'/>
         <h1 className='textLight'>
           Frontend Developer
         </h1>

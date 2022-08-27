@@ -27,7 +27,6 @@ function App() {
       svg_star_element.setAttribute("r", "1");
       svg_star_element.setAttribute("fill", `#6ac2fc`);
       svgObj.appendChild(svg_star_element);
-
       svgObj.appendChild(svg_star_element);
     }
   }

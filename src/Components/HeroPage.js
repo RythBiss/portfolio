@@ -9,10 +9,10 @@ export default function Hero() {
       <Title />
         <div className='constellation-container'>
 
-          <Constellation className='constellation-component top-left' pattern='Orion'/>
-          <Constellation className='constellation-component top-right' pattern='Taurus'/>
-          <Constellation className='constellation-component bot-left' pattern='Canis'/>
-          <Constellation className='constellation-component bot-right' pattern='Scorpius'/>
+          <Constellation className='top-left' pattern='Orion' navTo='About'/>
+          <Constellation className='top-right' pattern='Taurus' navTo='Skills'/>
+          <Constellation className='bot-left' pattern='Canis' navTo='Work'/>
+          <Constellation className='bot-right' pattern='Scorpius' navTo='Contact'/>
 
           
         </div>
