@@ -1,20 +1,18 @@
 import React from 'react'
-import Constellation from './Constellation'
+import NavBar from './NavBar';
 import Title from './Title'
 
-export default function Hero() {
+export default function Hero(props) {
+
+  const handleClick = (ref) => {
+    ref.current.scrollIntoView({behavior: 'smooth'});
+  };  
 
   return (
-    <div className='hero-page-container'>
+    <div ref={props.setRef} className='hero-page-container'>
       <div id='title-container'>
         <Title />
-        <ul id='navBar'>
-          <li className='navButton' >Home</li>
-          <li className='navButton' >About</li>
-          <li className='navButton' >Skills</li>
-          <li className='navButton' >Work</li>
-          <li className='navButton' >Contact</li>
-        </ul>
+        <NavBar refArray={props.refArray} />
       </div>
     </div>
   )

@@ -1,8 +1,9 @@
 import './App.css';
-import { useEffect } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import HeroPage from './Components/HeroPage';
 import ContentBlock from './Components/ContentBlock'
 import SkillIcon from './Components/SkillIcon';
+import NavBar from './Components/NavBar';
 
 
 function App() {
@@ -22,13 +23,31 @@ function App() {
   const workText = 'fancy projects';
   const contactText = 'dkschaarschmidt@gmail.com || 240-866-0273'
   
+  const homeRef = useRef(null);
+  const aboutRef = useRef(null);
+  const skillRef = useRef(null);
+  const workRef = useRef(null);
+  const contactRef = useRef(null);
+
+  const refArray = [homeRef, aboutRef, skillRef, workRef, contactRef]
+
+  const [scrollPos, setScrollPos] = useState(0);
 
   useEffect(() => {
     generateStars();
-  })
+
+    window.addEventListener("scroll", handleScrollPos);
+
+    return () => {
+        window.removeEventListener("scroll", handleScrollPos);
+    };
+  }, []);
+
+  useEffect(() => {
+    setScrollPos(window.pageYOffset);
+  });
 
   const generateStars = () => {
-
     for(let a = 0; a < 1000; a++){
       let svgObj = document.getElementById('svg-id');
 
@@ -46,17 +65,22 @@ function App() {
     }
   }
 
+  const handleScrollPos = () => {
+    const pos = window.pageYOffset;
+    setScrollPos(pos);
+}
+
   return (
     
     <div className="App">
-      
       {/* this gets filled in by generateStars. */}
       <svg id='svg-id' viewbox= '0 0 1920 5400'></svg>
-      <HeroPage />
-      <ContentBlock title='About' text={aboutText} bgStyle='bg-white' textStyle='text-dark'/>
-      <ContentBlock title='Skills' text={skillsText} textStyle='text-white' titleStyle='title-white'/>
-      <ContentBlock title='Work' text={workText} bgStyle='bg-white' textStyle='text-dark'/>
-      <ContentBlock title='Contact' text={contactText} bgStyle='bg-dark' textStyle='text-white' titleStyle='title-white'/>
+      {scrollPos > window.innerHeight-1 ? <NavBar refArray={refArray} additionalClass='fixedNav'/> : ''}
+      <HeroPage setRef={homeRef} refArray={refArray}/>
+      <ContentBlock setRef={aboutRef} title='About' text={aboutText} bgStyle='bg-white' textStyle='text-dark'/>
+      <ContentBlock setRef={skillRef} title='Skills' text={skillsText} textStyle='text-white' titleStyle='title-white'/>
+      <ContentBlock setRef={workRef} title='Work' text={workText} bgStyle='bg-white' textStyle='text-dark'/>
+      <ContentBlock setRef={contactRef} title='Contact' text={contactText} bgStyle='bg-dark' textStyle='text-white' titleStyle='title-white'/>
     </div>
   );
 }
