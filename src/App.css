@@ -1,154 +1,173 @@
-*{
-  margin: 0;
-  padding: 0;
-  font-family: 'Courier New', Courier, monospace;
-  color: var(--white);
- }
-
- body {
-  background-image: linear-gradient(#100914, #0e235c);
-  height: 100%;
- }
-
- h6 {
-  z-index: -100;
- }
-
- /* circle {
-  filter: blur(1px);
- } */
-
- :root {
-  --dark-grey: rgb(15, 20, 25);
-  --dark-blue: rgb(14, 43, 71);
-  --blue: #1508cf;
-  --pink: #fb00ff;
-  --white: #fffff2b9;
-  --constellation-margin: 10%;
- }
-
-
 /* unique styles */
 
 #svg-id {
   position: absolute;
-  height: 500vh;
+  height: 500%;
   width: 100%;
-}
- 
-
-.line {
-  width: 100%;
-  height: 5px;
-  border-radius: 50%;
-  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) ,  rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
-  z-index: -100;
+  filter: blur(1px);
 }
 
-#filterSVG{
-  height: 0px;
+#seperator {
+  width: 100%;
+  height: 1px;
+  margin: auto 8px auto 8px;
+  background-color: var(--highlightblue);
 }
+
+.title-text {
+  text-align: center;
+  font-size: 72px;
+}
+
+
+#title-container {
+  width: fit-content;
+}
+
+/*  */
+
+
+/*Primary Styles*/
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Prompt', sans-serif;
+  color: var(--white);
+ }
+
+ :root {
+  --dark-purple: #100914;
+  --dark-blue: #0e235c;
+  --sunset-pink: rgb(255, 81, 241);
+  --highlightblue: rgb(109, 197, 255);
+  --white: #f1f1f1;
+  --dark-grey: rgb(0, 10, 25);
+  --constellation-margin: 10%;
+  --border-width: 1px;
+  --border-radius: 4px;
+ }
+
+ body {
+  background-image: linear-gradient(var(--dark-purple), var(--dark-blue), var(--sunset-pink));
+ }
 
 .major-content-container, .hero-page-container {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
   width: 100%;
   height: 100vh;
   min-height: 600px;
 }
 
-/*  */
+/**/
 
 
+/*NavBar*/
 
-/* ContentBlock.js */
-
-.content-title {
-  margin: 5% auto 5% auto;
-  width: fit-content;
+#navBar {
+  display: flex;
+  justify-content: center;
+  margin: 4px auto;
+  width: 100%;
+  list-style-type: none;
 }
-
-.content-container {
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-
-  border-radius: 0px 5px 5px 0px;
-  border: 4px solid var(--white);
-  border-left: none;
-  background-color: rgba(16, 9, 20, 0.5);
-  width: 50%;
-  height: fit-content;
-  min-height: 325px;
-}
-
-.content-text {
-  min-width: 250px;
-  max-height: 50%;
-  margin: 5% auto 5% auto;
-}
-
-.content-right {
-  left: auto;
-  transform: translate(99%, -50%);
-  border-radius: 5px 0px 0px 5px;
-  border-left: 4px solid var(--white);
-  border-right: none;
-}
-
-.content-center {
-  left: auto;
-  bottom: 50%;
-  transform: translate(50%, -50%);
-  right: auto;
-  border-radius: 5px;
-  border: 4px solid var(--white);
-}
-
-/*  */
-
-
-
-.splash-text-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 512px;
-  height: 512px;
-}
-
-.splashText {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: fit-content;
-  height: fit-content;
-}
-
-.textLight {
-  text-align: center;
-  font-size: 27px;
-  color: var(--white);
+.navButton{
+  font-size: 28px;
   margin: auto;
 }
 
-.blob-svg {
+li:hover {
+  /* make this a fade in-out line */
+  border-bottom: var(--border-width) solid var(--highlightblue);
+  margin-bottom: -1px;
+  color: var(--highlightblue);
+  cursor: pointer;
+}
+
+/**/
+
+/* ContentBlock.js */
+
+.minor-content-container {
+  height: 80%;
+  width: 80%;
+}
+
+.content-title {
+  width: fit-content;
+  color: var(--dark-grey);
+  border-bottom: 1px solid var(--dark-grey);
+  font-size: 48px;
+}
+
+.content-text {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 60%;
-  overflow: visible;
-  filter: url(#gooey);
+  
+  margin: auto;
+  width: fit-content;
+  min-width: 400px;
+
+  color: var(--dark-grey);
+  font-size: 24px;
+  font-style: normal;
+  text-align: center;
+
+  border: var(--border-width) solid var(--dark-grey);
+  border-radius: var(--border-radius);
+  padding: 5%;
 }
 
-.constellation-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  min-height: 700px;
+.bg-white {
+  background-color: var(--white);
 }
+
+.bg-dark {
+  background-color: var(--dark-grey);
+}
+
+.text-white {
+  color: var(--white);
+  border: var(--border-width) solid var(--highlightblue);
+}
+
+.text-dark {
+  color: var(--dark-grey);
+}
+
+.title-white {
+  color: var(--white);
+  border-bottom: 1px solid var(--highlightblue);
+}
+
+/*  */
+
+/*SkillIcon.js*/
+
+.skill-icon {
+  width: fit-content;
+  height: fit-content;
+  padding: 4px 16px;
+  margin: 4px 16px;
+  font-size: 30px;
+  font-weight: bold;
+  border: var(--border-width) solid var(--highlightblue);
+  border-radius: var(--border-radius);
+}
+
+/**/
+
+/*Constellations*/
 
 .constellation-component {
   position: absolute;
@@ -168,38 +187,6 @@
   filter: blur(1.5px);
 }
 
-.bg-stars {
-  filter: blur(1px);
-}
-
-.top-left {
-  top: var(--constellation-margin);
-  left: var(--constellation-margin);
-}
-
-.top-right {
-  top: var(--constellation-margin);
-  right: var(--constellation-margin);
-}
-
-.bot-left {
-  bottom: var(--constellation-margin);
-  left: var(--constellation-margin);
-}
-
-.bot-right {
-  bottom: var(--constellation-margin);
-  right: var(--constellation-margin);
-}
-
-.constellation-content-display {
-  position: relative;
-  width: 25%;
-  height: 40%;
-  min-height: 300px;
-  margin: 32px;
-}
-
 .constellation-svg:hover {
   animation: traceAnim 1s ease-in forwards;
 }
@@ -210,55 +197,4 @@
   }
 }
 
-
-@media only screen and (max-width: 1080px) {
-  .splash-text-container{
-    position: relative;
-    margin: auto;
-    top: 0%;
-    left: 0%;
-    transform: translate(0%, 0%);
-
-    width: 350px;
-    height: 35%;
-  }
-
-  .constellation-container {
-    position: relative;
-    margin: 0 auto 0 auto;
-    height: 65%;
-    min-height: 600px;
-    width: 80%;
-    min-width: 512px;
-  }
-  
-  .hero-page-container {
-    width: 100%;
-    min-width: 0;
-    min-height: none;
-  }
-
-  .top-left {
-    top: 5%;
-    left:5%;
-  }
-
-  .top-right {
-    top: 5%;
-    right: 5%;
-  }
-
-  .bot-left {
-    bottom: 5%;
-    left: 5%;
-  }
-
-  .bot-right {
-    bottom: 5%;
-    right:5%;
-  }
-
-  .textLight {
-    font-size: 20px;
-  }
-}
+/**/

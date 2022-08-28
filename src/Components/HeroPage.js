@@ -6,17 +6,16 @@ export default function Hero() {
 
   return (
     <div className='hero-page-container'>
-      
-      <Title />
-        <div className='constellation-container'>
-
-          <Constellation className='top-right' pattern='Orion' navTo='Skills'/>
-          <Constellation className='bot-left' pattern='Taurus' navTo='Work'/>
-          <Constellation className='bot-right' pattern='Canis' navTo='Contact'/>
-          <Constellation className='top-left' pattern='Scorpius' navTo='About'/>
-
-          
-        </div>
+      <div id='title-container'>
+        <Title />
+        <ul id='navBar'>
+          <li className='navButton' >Home</li>
+          <li className='navButton' >About</li>
+          <li className='navButton' >Skills</li>
+          <li className='navButton' >Work</li>
+          <li className='navButton' >Contact</li>
+        </ul>
+      </div>
     </div>
   )
 }

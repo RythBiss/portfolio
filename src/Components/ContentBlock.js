@@ -4,15 +4,12 @@ import Constellation from './Constellation'
 export default function ContentBlock(props) {
 
   return (
-    <div className={`major-content-container ${props.className}`} >
-      <div className={`content-container ${props.pos}`}>
-        <h1 className='content-title' >{`${props.title}`}</h1>
-        <p className='content-text textLight'>
-          {props.text}
-        </p>
-        <>
-          {props.content}
-        </>
+    <div className={`major-content-container ${props.bgStyle}`} >
+      <div className='minor-content-container'>
+        <h1 className={`content-title ${props.titleStyle}`}>{`${props.title}`}</h1>
+          <div className={`content-text ${props.textStyle}`}>
+            {props.text}
+          </div>
       </div>
     </div>
   )
