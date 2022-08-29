@@ -84,7 +84,7 @@ function App() {
       <HeroPage setRef={homeRef} refArray={refArray}/>
       <ContentBlock setRef={aboutRef} title='About' text={aboutText} bgStyle='bg-white' textStyle='text-dark'/>
       <ContentBlock setRef={skillRef} title='Skills' text={skillsText} textStyle='text-white' titleStyle='title-white'/>
-      <ContentBlock setRef={workRef} title='Work' text={workText} bgStyle='bg-white' textStyle='text-dark content-flex-row'/>
+      <ContentBlock setRef={workRef} title='Work' text={workText} bgStyle='bg-white' textStyle='text-dark'/>
       <ContentBlock setRef={contactRef} title='Contact' text={contactText} bgStyle='bg-dark' textStyle='text-white' titleStyle='title-white'/>
     </div>
   );

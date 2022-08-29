@@ -156,10 +156,8 @@
   transform: translate(-50%, -50%);
   
   margin: auto;
-  width: fit-content;
-  min-width: 40rem;
-  max-width: 80%;
-  height: fit-content;
+  width: 80%;
+  max-height: 35rem;
 
   color: var(--dark-grey);
   font-size: 24px;
@@ -190,10 +188,6 @@
 .title-white {
   color: var(--white);
   border-bottom: 1px solid var(--highlightblue);
-}
-
-.content-flex-row{
-  flex-flow: row;
 }
 
 /*  */
@@ -263,3 +257,7 @@
 }
 
 /**/
+
+@media only screen and (min-width: 600px) {
+  
+} 
