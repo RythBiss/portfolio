@@ -58,7 +58,7 @@
 
 .title-text {
   text-align: center;
-  font-size: 72px;
+  font-size: 3rem;
 }
 
 
@@ -116,8 +116,9 @@
 
 .navButton{
   font-size: 28px;
-  margin: auto;
+  margin: 0 auto;
   font-weight: lighter;
+  
 }
 
 .navButton:hover {
@@ -156,7 +157,9 @@
   
   margin: auto;
   width: fit-content;
-  min-width: 400px;
+  min-width: 40rem;
+  max-width: 80%;
+  height: fit-content;
 
   color: var(--dark-grey);
   font-size: 24px;
@@ -164,7 +167,7 @@
 
   border: var(--border-width) solid var(--dark-grey);
   border-radius: var(--border-radius);
-  padding: 5%;
+  padding: 1rem;
 }
 
 .bg-white {
@@ -189,6 +192,10 @@
   border-bottom: 1px solid var(--highlightblue);
 }
 
+.content-flex-row{
+  flex-flow: row;
+}
+
 /*  */
 
 /*SkillIcon.js*/
@@ -201,6 +208,26 @@
   font-size: 30px;
   border: var(--border-width) solid var(--highlightblue);
   border-radius: var(--border-radius);
+}
+
+/**/
+
+/*ProjectLink*/
+
+.projectLink {
+  font-size: 1rem;
+  width: 20rem;
+  min-height: fit-content;
+  overflow: hidden;
+  border: var(--border-width) solid var(--dark-grey);
+  border-radius: var(--border-radius);
+  margin: 1rem;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.projectLink:hover {
+  border: var(--border-width) solid var(--highlightblue);
 }
 
 /**/

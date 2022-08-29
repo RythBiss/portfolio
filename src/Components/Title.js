@@ -4,7 +4,6 @@ export default function Title() {
 
   return (
     <div className='splash-text-container'>
-      {/* <SpaceBlob styling='starBlob' r={circleR}/> */}
       <h1 className='title-text'>
           David Schaarschmidt
         </h1>

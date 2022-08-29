@@ -4,6 +4,7 @@ import HeroPage from './Components/HeroPage';
 import ContentBlock from './Components/ContentBlock'
 import SkillIcon from './Components/SkillIcon';
 import NavBar from './Components/NavBar';
+import ProjectLink from './Components/ProjectLink';
 
 
 function App() {
@@ -20,7 +21,11 @@ function App() {
     <SkillIcon skill='C#'/>
     {/* hover display? */}
   </>;
-  const workText = 'fancy projects';
+  const workText = <>
+    <ProjectLink goTo='' title='Portfolio' text='Responsive web portfolio showing off current skills and works.' />
+    <ProjectLink goTo='' title='Card Game' text='High speed single player card game with high risk reward gameplay.' />
+    <ProjectLink goTo='' title='Reddit Scroller' text='Reddit browser with infinite scrolling.' />
+  </>;
   const contactText = 'dkschaarschmidt@gmail.com || 240-866-0273'
   
   const homeRef = useRef(null);
@@ -79,7 +84,7 @@ function App() {
       <HeroPage setRef={homeRef} refArray={refArray}/>
       <ContentBlock setRef={aboutRef} title='About' text={aboutText} bgStyle='bg-white' textStyle='text-dark'/>
       <ContentBlock setRef={skillRef} title='Skills' text={skillsText} textStyle='text-white' titleStyle='title-white'/>
-      <ContentBlock setRef={workRef} title='Work' text={workText} bgStyle='bg-white' textStyle='text-dark'/>
+      <ContentBlock setRef={workRef} title='Work' text={workText} bgStyle='bg-white' textStyle='text-dark content-flex-row'/>
       <ContentBlock setRef={contactRef} title='Contact' text={contactText} bgStyle='bg-dark' textStyle='text-white' titleStyle='title-white'/>
     </div>
   );
