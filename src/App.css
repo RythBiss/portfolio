@@ -116,7 +116,7 @@
 
 .navButton{
   font-size: 1.75rem;
-  margin: 0 auto;
+  margin: 1rem auto;
   font-weight: lighter;
 }
 
@@ -285,5 +285,4 @@
     margin: auto;
     width: 80%;
   }
-
-} 
+}
