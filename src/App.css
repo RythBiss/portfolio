@@ -160,7 +160,7 @@
   max-width: 45rem;
 
   color: var(--dark-grey);
-  font-size: 24px;
+  font-size: 1.75rem;
   text-align: center;
 
   border: var(--border-width) solid var(--dark-grey);
@@ -259,11 +259,6 @@
 /**/
 
 @media only screen and (max-width: 600px) {
-  
-  .hide-on-small {
-    display: none;
-  }
-
   .navButton{
     font-size: 1.5rem;
   }  
@@ -277,10 +272,17 @@
     max-height: 90%;
     margin: 2rem auto;
     width: fit-content;
+    font-size: 1rem;
   }
 
   .splash-text-container {
     margin: auto;
     width: 80%;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .hide-on-small {
+    display: none;
   }
 }
