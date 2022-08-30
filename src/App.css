@@ -259,11 +259,6 @@
 /**/
 
 @media only screen and (max-width: 600px) {
-  
-  .hide-on-small {
-    display: none;
-  }
-
   .navButton{
     font-size: 1.5rem;
   }  
@@ -282,5 +277,11 @@
   .splash-text-container {
     margin: auto;
     width: 80%;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .hide-on-small {
+    display: none;
   }
 }
