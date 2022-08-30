@@ -118,6 +118,7 @@
   font-size: 1.75rem;
   margin: 1rem auto;
   font-weight: lighter;
+  user-select: none;
 }
 
 .navButton:hover {
