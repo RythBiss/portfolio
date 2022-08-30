@@ -10,20 +10,20 @@
 
  :root {
   --dark-purple: #100914;
-  --dark-blue: #0e235c;
-  --sunset-pink: #224ab8;
+  --dark-blue: #213a81;
+  --sunset-pink: #e74bae;
   --highlightblue: rgb(109, 197, 255);
   --white: #f1f1f1;
   --dark-grey: rgb(0, 10, 25);
   --dark-bg: linear-gradient(rgb(1, 21, 51), rgb(0, 10, 25));
-  --light-bg: linear-gradient(var(--white), rgb(167, 167, 167));
+  --light-bg: rgb(218, 218, 218);
   --constellation-margin: 10%;
   --border-width: 1px;
   --border-radius: 4px;
  }
 
  body {
-  background-image: linear-gradient(var(--dark-purple), var(--dark-blue), var(--sunset-pink));
+  background-image: linear-gradient(135deg, var(--dark-purple), var(--dark-blue), var(--sunset-pink));
  }
 
 .major-content-container, .hero-page-container {
@@ -59,6 +59,7 @@
 .title-text {
   text-align: center;
   font-size: 3rem;
+  font-weight: 100;
 }
 
 
@@ -123,9 +124,9 @@
 
 .navButton:hover {
   /* make this a fade in-out line */
-  border-bottom: var(--border-width) solid var(--highlightblue);
+  border-bottom: var(--border-width) solid grey;
   margin-bottom: -1px;
-  color: var(--highlightblue);
+  color: grey;
   cursor: pointer;
 }
 
@@ -162,6 +163,7 @@
 
   color: var(--dark-grey);
   font-size: 1.75rem;
+  font-weight: 100;
   text-align: center;
 
   border: var(--border-width) solid var(--dark-grey);
@@ -170,7 +172,7 @@
 }
 
 .bg-white {
-  background-image: var(--light-bg);
+  background-color: var(--light-bg);
 }
 
 .bg-dark {
@@ -222,7 +224,7 @@
 }
 
 .projectLink:hover {
-  border: var(--border-width) solid var(--highlightblue);
+  border: var(--border-width) solid grey;
 }
 
 /**/

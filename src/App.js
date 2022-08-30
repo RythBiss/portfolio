@@ -8,8 +8,9 @@ import ProjectLink from './Components/ProjectLink';
 
 
 function App() {
+  const vh = window.screen.height;
 
-  const aboutText = 'My name is David K. Schaarschmidt. I am a front-end developer with over 3 years of experience with a variety of software technologies and tools. Outside of work, you can find me playing video games, working on my boat, Mable, or taking road trips to interesting restaurants.';
+  const aboutText = 'My name is David K. Schaarschmidt. I am a front-end developer with over 3 years of experience with a variety of software technologies and tools. Outside of work, you can find me playing video games, working on my boat, or pursuing new hobbies.';
   const skillsText = <>
     <SkillIcon skill='HTML'/>
     <SkillIcon skill='CSS'/>
@@ -57,7 +58,7 @@ function App() {
       let svgObj = document.getElementById('svg-id');
 
       let x = Math.floor(Math.random() * 1920);
-      let y = Math.floor(Math.random() * 5400);
+      let y = Math.floor(Math.random() * (vh*2.5));
       
       const svg_star_element = document.createElementNS("http://www.w3.org/2000/svg", 'circle');
 
