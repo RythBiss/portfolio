@@ -17,7 +17,8 @@ function App() {
     <SkillIcon skill='Sass'/>
     <SkillIcon skill='JavaScript'/>
     <SkillIcon skill='React'/>
-    <SkillIcon skill='Git/Github'/>
+    <SkillIcon skill='Git'/>
+    <SkillIcon skill='Github'/>
     <SkillIcon skill='Java'/>
     <SkillIcon skill='C++'/>
     <SkillIcon skill='C#'/>
