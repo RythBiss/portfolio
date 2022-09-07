@@ -14,6 +14,7 @@ function App() {
   const skillsText = <>
     <SkillIcon skill='HTML'/>
     <SkillIcon skill='CSS'/>
+    <SkillIcon skill='Sass'/>
     <SkillIcon skill='JavaScript'/>
     <SkillIcon skill='React'/>
     <SkillIcon skill='Git/Github'/>
@@ -23,7 +24,7 @@ function App() {
     {/* hover display? */}
   </>;
   const workText = <>
-    <ProjectLink goTo='' title='Portfolio' text='Responsive web portfolio showing off current skills and works.' />
+    <ProjectLink goTo='' title='Front-end Portfolio' text='Responsive web portfolio showing off skills and Projects.' />
     <ProjectLink goTo='' title='Card Game' text='High speed single player card game with high risk reward gameplay.' />
     <ProjectLink goTo='' title='Reddit Scroller' text='Reddit browser with infinite scrolling.' />
   </>;
@@ -58,7 +59,7 @@ function App() {
       let svgObj = document.getElementById('svg-id');
 
       let x = Math.floor(Math.random() * 1920);
-      let y = Math.floor(Math.random() * (vh*2.5));
+      let y = Math.floor(Math.random() * (vh*3));
       
       const svg_star_element = document.createElementNS("http://www.w3.org/2000/svg", 'circle');
 
@@ -85,7 +86,7 @@ function App() {
       <HeroPage setRef={homeRef} refArray={refArray}/>
       <ContentBlock setRef={aboutRef} title='About' text={aboutText} bgStyle='bg-white' textStyle='text-dark'/>
       <ContentBlock setRef={skillRef} title='Skills' text={skillsText} textStyle='text-white' titleStyle='title-white'/>
-      <ContentBlock setRef={workRef} title='Work' text={workText} bgStyle='bg-white' textStyle='text-dark'/>
+      <ContentBlock setRef={workRef} title='Projects' text={workText} bgStyle='bg-white' textStyle='text-dark'/>
       <ContentBlock setRef={contactRef} title='Contact' text={contactText} textStyle='text-white' titleStyle='title-white'/>
     </div>
   );

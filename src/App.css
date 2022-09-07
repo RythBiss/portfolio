@@ -124,9 +124,9 @@
 
 .navButton:hover {
   /* make this a fade in-out line */
-  border-bottom: var(--border-width) solid grey;
+  border-bottom: var(--border-width) solid var(--highlightblue);
   margin-bottom: -1px;
-  color: grey;
+  color: var(--highlightblue);
   cursor: pointer;
 }
 
@@ -166,7 +166,6 @@
   font-weight: 100;
   text-align: center;
 
-  border: var(--border-width) solid var(--dark-grey);
   border-radius: var(--border-radius);
   padding: 1rem;
 }
@@ -216,15 +215,27 @@
   width: 7rem;
   min-height: fit-content;
   overflow: hidden;
-  border: var(--border-width) solid var(--dark-grey);
+  background-color: #ececec;
   border-radius: var(--border-radius);
   margin: 1rem;
   padding: 1rem;
   text-decoration: none;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.199);
+  display: flex;
+  flex-direction: column;
+}
+
+.projectLink > h2{
+  border-bottom: var(--border-width) solid grey;
+  margin-bottom: -1px;
+}
+
+.projectLink > p {
+  color: grey;
 }
 
 .projectLink:hover {
-  border: var(--border-width) solid grey;
+  box-shadow: 5px 5px 5px rgb(109, 197, 255, 0.199);
 }
 
 /**/
@@ -267,15 +278,10 @@
   }  
 
   .content-text {
-    position: relative;
-    top: auto;
-    left: auto;
-    transform: translate(0, 0);
     min-height: fit-content;
     max-height: 90%;
+    min-width: fit-content;
     margin: 2rem auto;
-    width: fit-content;
-    font-size: 1rem;
   }
 
   .splash-text-container {
