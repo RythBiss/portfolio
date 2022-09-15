@@ -52,7 +52,7 @@ function App() {
       let svgObj = document.getElementById('svg-id');
 
       let x = Math.floor(Math.random() * vw);
-      let y = Math.floor(Math.random() * (vh*3));
+      let y = Math.floor(Math.random() * (vh * 3));
       
       const svg_star_element = document.createElementNS("http://www.w3.org/2000/svg", 'circle');
 
