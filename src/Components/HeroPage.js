@@ -12,7 +12,6 @@ export default function Hero(props) {
     <div ref={props.setRef} className='hero-page-container'>
       <div id='title-container'>
         <Title />
-        <NavBar refArray={props.refArray} />
       </div>
     </div>
   )

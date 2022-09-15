@@ -42,36 +42,64 @@
 
 /* unique styles */
 
+
+.splash-text-container {
+  width: 100%;
+}
+
 #svg-id {
   position: absolute;
-  height: 500%;
+  height: 300vh;
+  min-height: 1800px;
   width: 100%;
   filter: blur(1px);
 }
 
 #seperator {
   width: 100%;
+  max-width: 800px;
   height: 1px;
-  margin: auto 8px auto 8px;
+  margin: auto;
   background-color: var(--highlightblue);
 }
 
 .title-text {
   text-align: center;
-  font-size: 3rem;
+  font-size: 5rem;
   font-weight: 100;
 }
 
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--light-bg);
+  box-shadow: 0 0 5px rgb(0, 0, 0, 0.5);
+
+  height: 100px;
+}
+
+.footer > h3, h2{
+  color: var(--dark-grey);
+}
 
 #title-container {
-  width: fit-content;
   opacity: 0;
-  animation: fadeIn 1s ease-in-out forwards;
+
+  width: 50%;
+  min-width: fit-content;
+
+  margin: 16px;
+
+  display: flex;
+  flex-direction: column;
+
+  animation: fadeIn 0.5s ease-in-out forwards;
 }
 
 @keyframes fadeIn {
-
-
   25%{
     opacity: 0;
     transform: translateY(5%);
@@ -93,7 +121,7 @@
   justify-content: center;
   width: 100%;
   list-style-type: none;
-  
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 @keyframes dropDown {
@@ -106,7 +134,7 @@
   position: fixed;
   z-index: 1;
   background-color: var(--white);
-  border-bottom: var(--border-width) solid rgb(216, 216, 216);
+  border-bottom: var(--border-width) solid var(--light-bg);
   animation: dropDown 0.5s forwards;
 }
 
@@ -156,14 +184,14 @@
   left: 50%;
   transform: translate(-50%, -50%);
   
-  margin: auto;
+  margin: 64px auto;
   width: 80%;
-  max-height: 20rem;
   max-width: 45rem;
+  max-height: 600px;
 
   color: var(--dark-grey);
   font-size: 1.75rem;
-  font-weight: 100;
+  font-weight: bold;
   text-align: center;
 
   border-radius: var(--border-radius);
@@ -172,6 +200,7 @@
 
 .bg-white {
   background-color: var(--light-bg);
+  box-shadow: 0 0 5px rgb(0, 0, 0, 0.5);
 }
 
 .bg-dark {
@@ -180,7 +209,6 @@
 
 .text-white {
   color: var(--white);
-  border: var(--border-width) solid var(--highlightblue);
 }
 
 .text-dark {
@@ -202,7 +230,8 @@
   padding: 4px 16px;
   margin: 4px 16px;
   font-size: 30px;
-  border: var(--border-width) solid var(--highlightblue);
+  color: var(--dark-grey);
+  border: var(--border-width) solid var(--dark-grey);
   border-radius: var(--border-radius);
 }
 
@@ -211,23 +240,34 @@
 /*ProjectLink*/
 
 .projectLink {
-  font-size: 1rem;
-  width: 7rem;
-  min-height: fit-content;
-  overflow: hidden;
   background-color: #ececec;
   border-radius: var(--border-radius);
+
   margin: 1rem;
   padding: 1rem;
+  
   text-decoration: none;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.199);
+  
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  font-size: 1.5rem;
 }
 
-.projectLink > h2{
-  border-bottom: var(--border-width) solid grey;
-  margin-bottom: -1px;
+.projectLink > p{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.project-seperator{
+  min-width: 2px;
+  height: 100%;
+  margin: 16px;
+  background-color: #100914;
 }
 
 .projectLink > p {
@@ -235,7 +275,7 @@
 }
 
 .projectLink:hover {
-  box-shadow: 5px 5px 5px rgb(109, 197, 255, 0.199);
+  scale: 1.01;
 }
 
 /**/
@@ -272,7 +312,7 @@
 
 /**/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   .navButton{
     font-size: 1.25rem;
   }  
@@ -292,7 +332,25 @@
 }
 
 @media only screen and (max-width: 768px){
+  .title-text{
+    font-size: 4rem;
+  }
+
   .hide-on-small {
     display: none;
+  }
+
+  .text-dark{
+    font-size: 1.5rem;
+  }
+
+  .skill-icon{
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-height: 650px){
+  .skill-icon{
+    font-size: 0.75rem;
   }
 }
