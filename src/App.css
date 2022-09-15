@@ -17,6 +17,7 @@
   --dark-grey: rgb(0, 10, 25);
   --dark-bg: linear-gradient(rgb(1, 21, 51), rgb(0, 10, 25));
   --light-bg: rgb(218, 218, 218);
+  --soft-grey: rgba(128, 128, 128, 0.25);
   --constellation-margin: 10%;
   --border-width: 1px;
   --border-radius: 4px;
@@ -151,9 +152,8 @@
 }
 
 .navButton:hover {
-  /* make this a fade in-out line */
-  border-bottom: var(--border-width) solid var(--highlightblue);
-  margin-bottom: -1px;
+  border-bottom: 4px solid var(--highlightblue);
+  margin-bottom: -4px;
   color: var(--highlightblue);
   cursor: pointer;
 }
@@ -227,11 +227,11 @@
 .skill-icon {
   width: fit-content;
   height: fit-content;
-  padding: 4px 16px;
-  margin: 4px 16px;
-  font-size: 30px;
+  padding: 2px 4px;
+  margin: 4px;
+  font-size: 2rem;
   color: var(--dark-grey);
-  border: var(--border-width) solid var(--dark-grey);
+  border: var(--border-width) solid var(--soft-grey);
   border-radius: var(--border-radius);
 }
 
@@ -243,8 +243,10 @@
   background-color: #ececec;
   border-radius: var(--border-radius);
 
-  margin: 1rem;
-  padding: 1rem;
+  margin: 8px;
+  padding: 8px;
+
+  width: 100%;
   
   text-decoration: none;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.199);
@@ -253,25 +255,24 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-
-  font-size: 1.5rem;
 }
 
 .projectLink > p{
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  color: grey;
+}
+
+.projectLink > h2{
+  font-size: 2rem;
 }
 
 .project-seperator{
-  min-width: 2px;
+  min-width: 1px;
   height: 100%;
   margin: 16px;
-  background-color: #100914;
-}
-
-.projectLink > p {
-  color: grey;
+  background-color: var(--soft-grey);
 }
 
 .projectLink:hover {
@@ -282,7 +283,7 @@
 
 /*Constellations*/
 
-.constellation-component {
+/* .constellation-component {
   position: absolute;
   width: 225px;
   height: fit-content;
@@ -308,36 +309,23 @@
     100% {
       stroke-dashoffset: 0;
   }
-}
+} */
 
 /**/
 
-@media only screen and (max-width: 500px) {
-  .navButton{
-    font-size: 1.25rem;
-  }  
-
-  .content-text {
-    min-height: fit-content;
-    max-height: 90%;
-    min-width: fit-content;
-    margin: 2rem auto;
-    font-size: 1.4rem;
+@media only screen and (max-width: 992px){
+  .title-text{
+    font-size: 2.5rem;
   }
 
-  .splash-text-container {
-    margin: auto;
-    width: 80%;
+  .text-dark{
+    font-size: 1.5rem;
   }
 }
 
 @media only screen and (max-width: 768px){
   .title-text{
-    font-size: 4rem;
-  }
-
-  .hide-on-small {
-    display: none;
+    font-size: 2.5rem;
   }
 
   .text-dark{
@@ -347,10 +335,31 @@
   .skill-icon{
     font-size: 1rem;
   }
+
+  .navButton{
+    font-size: 1.25rem;
+  }
 }
 
-@media only screen and (max-height: 650px){
-  .skill-icon{
-    font-size: 0.75rem;
+@media only screen and (max-width: 576px) {
+  .navButton{
+    font-size: 0.9rem;
+  }  
+
+  .content-text {
+    min-height: fit-content;
+    max-height: 90%;
+    min-width: fit-content;
+    margin: 2rem auto;
+    font-size: 1rem;
+  }
+
+  .splash-text-container {
+    margin: auto;
+    width: 80%;
+  }
+
+  .title-text {
+    font-size: 2rem;
   }
 }
